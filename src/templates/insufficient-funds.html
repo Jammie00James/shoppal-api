@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transaction Failure</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  h1 {
+    color: #d9534f;
+  }
+  p {
+    margin: 10px 0;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Transaction Failure: Insufficient Funds</h1>
+    <p>Dear Admin,</p>
+    <p>We regret to inform you that a transaction has failed due to insufficient funds on the <strong>{{provider}}</strong> API.</p>
+    <h2>Transaction Details:</h2>
+    <ul>
+      <li><strong>API Provider:</strong> {{provider}}</li>
+      <li><strong>Amount:</strong> ₦{{amount}}</li>
+    </ul>
+    <p>Please take appropriate action to resolve this issue.</p>
+    <p>Best regards,<br/>SPIKESUBS</p>
+  </div>
+</body>
+</html>
